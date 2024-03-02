@@ -1,0 +1,44 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.SocketEmit = exports.SocketGameMsg = exports.SocketEvent = void 0;
+var SocketEvent;
+(function (SocketEvent) {
+    SocketEvent["CREATE_ROOM"] = "create_room";
+    SocketEvent["DELETE_ROOM"] = "delete_room";
+    SocketEvent["CREATE_MESSAGE"] = "create_message";
+    SocketEvent["JOIN_ROOM"] = "join_room";
+    SocketEvent["QUERY_ROOM"] = "query_room";
+    SocketEvent["FIND_ROOM"] = "find_room";
+    SocketEvent["UPDATE_ROOM"] = "update_room";
+    SocketEvent["REMOVE_ROOM"] = "remove_room";
+    SocketEvent["OUT_ROOM"] = "out_room";
+    SocketEvent["CHANGE_MSG_STATE"] = "change_msg_state";
+    SocketEvent["LOGIN"] = "login";
+    SocketEvent["CREATE_GAME"] = "create_game";
+})(SocketEvent = exports.SocketEvent || (exports.SocketEvent = {}));
+var SocketGameMsg;
+(function (SocketGameMsg) {
+    SocketGameMsg["PAUSE"] = "pause";
+    SocketGameMsg["MOVE_LEFT"] = "move_left";
+    SocketGameMsg["MOVE_RIGHT"] = "move_right";
+    SocketGameMsg["SPEED_UP"] = "speed_up";
+    SocketGameMsg["STOP"] = "stop";
+    SocketGameMsg["UPDATE_GAME"] = "update_game";
+    SocketGameMsg["DIRECTION"] = "direction";
+    SocketGameMsg["CREATE_GAME"] = "create_game";
+})(SocketGameMsg = exports.SocketGameMsg || (exports.SocketGameMsg = {}));
+var SocketEmit;
+(function (SocketEmit) {
+    SocketEmit["DELETE_ROOM"] = "delete_room";
+    SocketEmit["JOIN_ROOM"] = "join_room";
+    SocketEmit["CREATE_ROOM"] = "create_room";
+    SocketEmit["CREATE_MESSAGE"] = "create_message";
+    SocketEmit["RECEIVE_ROOM"] = "receive_room";
+    SocketEmit["QUERY_ROOM"] = "query_room";
+    SocketEmit["FIND_ROOM"] = "find_room";
+    SocketEmit["REMOVE_ROOM"] = "remove_room";
+    SocketEmit["UPDATE_ROOM"] = "update_room";
+    SocketEmit["OUT_ROOM"] = "out_room";
+    SocketEmit["CHANGE_MSG_STATE"] = "change_msg_state";
+    SocketEmit["CREATE_GAME"] = "create_game";
+})(SocketEmit = exports.SocketEmit || (exports.SocketEmit = {}));
